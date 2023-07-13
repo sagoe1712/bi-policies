@@ -1,0 +1,32 @@
+{
+    "name": "sagoe1712/bi-policies",
+    "type": "library",
+    "description": "list of policies",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:sagoe1712/foundation.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "sagoe1712\\BiPolicies\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Olayinka Sagoe",
+            "email": "sagoe.olayinka@gmail.com"
+        }
+    ],
+    "config": {
+        "platform": {
+            "php": "7.4"
+        }
+    },
+    "require": {
+        "php": "^7.4",
+        "doctrine/dbal": "~2.5",
+        "sagoe/foundation": "~1.0.0"
+    }
+}
