@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "sagoe1712\\BiPolicies\\": "src/"
+            "sagoe1712\\policies\\": "src/"
         }
     },
     "authors": [
