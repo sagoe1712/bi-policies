@@ -27,6 +27,6 @@
     "require": {
         "php": "^7.4",
         "doctrine/dbal": "~2.5",
-        "sagoe/foundation": "~1.0.0"
+        "sagoe1712/foundation": "~1.0.1"
     }
 }
