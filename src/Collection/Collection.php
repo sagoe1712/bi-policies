@@ -1,8 +1,8 @@
 <?php
 
-namespace olayinkasagoe\Client\Collection;
+namespace sagoe1712\Policies\Collection;
 
-//use olayinka\Foundation;
+use sagoe1712\Foundation;
 
 class Collection extends Foundation\Collection\Collection
 {
