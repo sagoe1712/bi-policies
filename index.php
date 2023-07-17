@@ -2,15 +2,15 @@
 
 include 'vendor/autoload.php';
 
-$policiesRepo = new \sagoe1712\Policies\Repository(
-    new sagoe1712\Policies\Mapper(
+$policiesRepo = new \sagoe1712\BiPolicies\Repository(
+    new sagoe1712\BiPolicies\Mapper(
         new \Doctrine\DBAL\Connection([
-            'host' => '127.0.0.1',
+            'host' => '192.168.33.200',
             'dbname' => 'broker_insight',
             'user' => 'root',
             'password' => ''
         ], new \Doctrine\DBAL\Driver\PDOMySql\Driver()),
-        new \ArenaRacingCompany\ActivityLog\Collection\Factory()
+        new \sagoe1712\BiPolicies\Collection\Factory()
     )
 );
 

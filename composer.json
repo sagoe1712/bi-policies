@@ -1,5 +1,5 @@
 {
-    "name": "sagoe1712/policies",
+    "name": "sagoe1712/bipolicies",
     "type": "library",
     "description": "list of policies",
     "repositories": [
@@ -8,11 +8,6 @@
             "url": "git@github.com:sagoe1712/foundation.git"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "sagoe1712\\policies\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "Olayinka Sagoe",
@@ -27,6 +22,11 @@
     "require": {
         "php": "^7.4",
         "doctrine/dbal": "~2.5",
-        "sagoe1712/foundation": "~1.0.1"
+        "sagoe1712/foundation": "^1.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "sagoe1712\\BiPolicies\\": "src/"
+        }
     }
 }

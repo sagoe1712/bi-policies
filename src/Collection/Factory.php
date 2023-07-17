@@ -1,9 +1,9 @@
 <?php
 
-namespace sagoe1712\Policies\Collection;
+namespace sagoe1712\BiPolicies\Collection;
 
 use sagoe1712\Foundation\Collection\Factory as CollectionFactory;
-use sagoe1712\Policies\Collection\Collection as EntityCollection;
+use sagoe1712\BiPolicies\Collection\Collection as EntityCollection;
 
 class Factory extends CollectionFactory
 {

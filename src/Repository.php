@@ -1,18 +1,18 @@
 <?php
 
-namespace sagoe1712\Policies;
+namespace sagoe1712\BiPolicies;
 
-use sagoe1712\Policies;
+use sagoe1712\BiPolicies;
 use sagoe1712\Foundation;
-use sagoe1712\Policies\Collection\Collection;
-use DateTime;
+use sagoe1712\BiPolicies\Collection\Collection;
 use Doctrine\DBAL\Exception;
+
 class Repository extends Foundation\Repository
 {
     /**
-     * @param Policies\Mapper $mapper
+     * @param BiPolicies\Mapper $mapper
      */
-    public function __construct(Policies\Mapper $mapper)
+    public function __construct(BiPolicies\Mapper $mapper)
     {
         $this->mapper = $mapper;
     }
@@ -24,7 +24,7 @@ class Repository extends Foundation\Repository
      * @param string $policyType
      * @param string $insurerName
      * @param int|null $id
-     * @return \sagoe1712\Policies\Policies
+     * @return \sagoe1712\BiPolicies\BiPolicies
      */
     public function getNew(
         string $customerName,
@@ -33,22 +33,23 @@ class Repository extends Foundation\Repository
         string $policyType,
         string $insurerName,
         ?int $id = null
-    ): Policies\Policies {
-        return new Policies\Policies(
-           $customerName,
-           $customerAddress,
-           $premium,
-           $policyType,
-           $insurerName,
-           $id
+    ): BiPolicies\BiPolicies {
+        return new BiPolicies\BiPolicies(
+            $customerName,
+            $customerAddress,
+            $premium,
+            $policyType,
+            $insurerName,
+            $id
         );
     }
 
     /**
-     * @param \sagoe1712\Policies\Policies $policy
-     * @return \sagoe1712\Policies\Policies
+     * @param \sagoe1712\BiPolicies\BiPolicies $policy
+     * @return \sagoe1712\BiPolicies\BiPolicies
+     * @throws Exception
      */
-    public function save(Policies\Policies $policy): Policies\Policies
+    public function save(BiPolicies\BiPolicies $policy): BiPolicies\BiPolicies
     {
         return $this->mapper->save($policy);
     }
@@ -56,6 +57,7 @@ class Repository extends Foundation\Repository
     /**
      * @param int $id
      * @return Collection
+     * @throws Exception
      */
     public function getById(int $id): Collection
     {

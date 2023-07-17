@@ -1,10 +1,9 @@
 <?php
 
-namespace sagoe1712\Policies;
+namespace sagoe1712\BiPolicies;
 
 use sagoe1712\Foundation\Model;
-use DateTime;
-class Policies extends Model
+class BiPolicies extends Model
 {
     /**
      * @var int|null
