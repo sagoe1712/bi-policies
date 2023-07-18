@@ -79,7 +79,7 @@ class Mapper extends  Foundation\Mapper
     }
 
     /**
-     * Get activity log by id.
+     * Get policy by id.
      *
      * @param int $id
      * @return Collection
