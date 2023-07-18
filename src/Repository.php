@@ -55,6 +55,8 @@ class Repository extends Foundation\Repository
     }
 
     /**
+     * Get policy by id.
+     *
      * @param int $id
      * @return Collection
      * @throws Exception

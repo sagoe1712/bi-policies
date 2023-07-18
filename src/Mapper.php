@@ -79,10 +79,11 @@ class Mapper extends  Foundation\Mapper
     }
 
     /**
+     * Get activity log by id.
+     *
      * @param int $id
-     * @return Foundation\Collection\CollectionInterface
+     * @return Collection
      * @throws \Doctrine\DBAL\Exception
-     * @throws Exception
      */
     public function getById(int $id): Foundation\Collection\CollectionInterface
     {

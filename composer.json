@@ -22,7 +22,7 @@
     "require": {
         "php": "^7.4",
         "doctrine/dbal": "~2.5",
-        "sagoe1712/foundation": "^1.0.1"
+        "sagoe1712/foundation": "dev-master"
     },
     "autoload": {
         "psr-4": {
